@@ -1,15 +1,8 @@
-import path from 'path';
-import { defineConfig, loadEnv } from 'vite';
+// vite.config.js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, '.', '');
-    return {
-      define: {
-      },
-      resolve: {
-        alias: {
-          '@': path.resolve(__dirname, '.'),
-        }
-      }
-    };
-});
+export default defineConfig({
+  plugins: [react()],
+  base: '/docx-replacer-app/', // 👈 VERY IMPORTANT
+})
