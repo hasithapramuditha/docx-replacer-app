@@ -1,0 +1,5 @@
+{
+  "name": "DOCX Placeholder Replacer",
+  "description": "An application to find and replace text placeholders in DOCX files using customizable rules and values, preserving document formatting.",
+  "requestFramePermissions": []
+}
